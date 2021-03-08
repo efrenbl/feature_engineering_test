@@ -1,9 +1,6 @@
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.master("local[*]").getOrCreate()
 
-from pyspark.sql import *
-import csv
-
 from pyspark.sql import Window
 from pyspark.sql.functions import rank, col
 import pyspark.sql.functions as F 
@@ -13,7 +10,7 @@ df = (spark
   .read                                              
   .option("inferSchema","true")                 
   .option("header","true")                           
-  .csv("rating_truncated.csv"))
+  .csv("rating.csv"))
 
 #fuctions
 def nb_previous_ratings(df):

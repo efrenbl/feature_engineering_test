@@ -1,6 +1,5 @@
 # FOR USE
 
-For use
 
 1.- Open in pyspark environment
 

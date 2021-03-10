@@ -6,4 +6,6 @@ data/*
 
 /process
 */process
-process/*
+process/
+
+rating.csv.zip
